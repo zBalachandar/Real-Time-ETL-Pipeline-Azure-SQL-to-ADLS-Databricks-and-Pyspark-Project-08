@@ -79,9 +79,11 @@ we have discussed how we work in real-time in Databricks and PySpark
 
 
 ## Data CLEANING PROGRESS STAGE 01
+![image](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/73edab70706f0b5485abd03d07fff235c5338f15/Assets/Databricks%20Dcl1.png)
 ![Data CLEANING PROGRESS](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/3bc6430e11604edbe75f7e2f6765bc4126ca5953/Assets/Databricks%20project-data%20cleaning%20code.png)
 
 ## Data CLEANING PROGRESS STAGE 02
+![image](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/73edab70706f0b5485abd03d07fff235c5338f15/Assets/Databricks%20Dcl2.png)
 ![Data CLEANING PROGRESS 02](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/3bc6430e11604edbe75f7e2f6765bc4126ca5953/Assets/Databricks%20project-data%20cleaning%20code1.png)
 
 ## Pyspark Data Cleaning  stage 03
