@@ -26,9 +26,10 @@ In this project we are going to do end to end pyspark project. How to create ETL
 <a name="introduction"></a>
 ## 🔬 Project Overview
 
-we have Business requirements and we want to do data cleaning and processing using PySpark in Databricks Environment.
-we have discussed how we work in real-time in Databricks and PySpark 
-we have developed the presentation Dashboard according to the Databricks notebook KPI's. 
+In this project we have Business requirements, we have sales outlet data available in azure sql database and we need to transform, clean this data and move to ADLS Storage.Business and Data Scientist people want to use this data and they wanted to have in the csv file format.This project covers end to end process to create end to end ETL pipeline to load data from Azure SQL to ADLS. This demo exercise covers these three areas
+1. Extract data from Azure SQL tables
+2. Transform the data with business rules
+3. Load the data to Azure Data Lake Storage
 
 ### Project live link: https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4339393889004771/4320089602186732/1662184132138436/latest.html
 
@@ -42,14 +43,26 @@ Dataset link: https://drive.google.com/file/d/1kbd1Ew8W8m_Dfeq5zKq3nP6kdeKzK61l/
 ### Project steps to follow: 
 what we have covered in this project:
 
+1. Extract data from Azure SQL tables
+2. Transform the data with business rules
 - We need to connect the Azure SQL database using Databricks
 - Perform some cleaning operations
 - Do some insight using data bricks -> optional
 - Mount ADLS/Blob location and store the data.
-- Analysis of the data according to the business requirement
+- Analysis of the data according to the business requirement.
+3. Load the data to Azure Data Lake Storage
 
 we have Business requirements and we want to do data cleaning and processing using PySpark in Databricks Environment.
 we have discussed how we work in real-time in Databricks and PySpark 
+
+### Data Ingestion & Extract data from Azure SQL tables
+![image](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/3bc6430e11604edbe75f7e2f6765bc4126ca5953/Assets/Azure%20portal%20overview.png)
+![image](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/3bc6430e11604edbe75f7e2f6765bc4126ca5953/Assets/ASQL%20query%20success%201.png)
+![image](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/3bc6430e11604edbe75f7e2f6765bc4126ca5953/Assets/ASQL%20query%20success%201.1.png)
+![image](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/3bc6430e11604edbe75f7e2f6765bc4126ca5953/Assets/ASQL%20query%20success%201.1Check.png)
+![image](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/3bc6430e11604edbe75f7e2f6765bc4126ca5953/Assets/Container%20outlet.png)
+
+
 
 
 <a name="data-transformation"></a>
@@ -58,51 +71,40 @@ we have discussed how we work in real-time in Databricks and PySpark
 # DataBricks Notebook.
 [DataBricks Notebook- Project Live-link](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4339393889004771/4320089602186732/1662184132138436/latest.html)
 
-## Google Play Store Pyspark Project Data frame imported
-![image]()
+## Connect Azure sql Database in DataBricks Environment.
+![image](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/3bc6430e11604edbe75f7e2f6765bc4126ca5953/Assets/Databricks%20project-startup%20code.png)
 
 ## Dataframe
-![Dataframe]()
+![Dataframe](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/3bc6430e11604edbe75f7e2f6765bc4126ca5953/Assets/Databricks%20project-df%20data.png)
 
 
 ## Data CLEANING PROGRESS STAGE 01
-![Data CLEANING PROGRESS]()
+![Data CLEANING PROGRESS](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/3bc6430e11604edbe75f7e2f6765bc4126ca5953/Assets/Databricks%20project-data%20cleaning%20code.png)
 
 ## Data CLEANING PROGRESS STAGE 02
-![Data CLEANING PROGRESS 02]()
+![Data CLEANING PROGRESS 02](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/3bc6430e11604edbe75f7e2f6765bc4126ca5953/Assets/Databricks%20project-data%20cleaning%20code1.png)
 
-## Pyspark Cleaning coding withregexp
-![Pyspark Cleaning coding withregexp]()
+## Pyspark Data Cleaning  stage 03
+![ Pyspark Data Cleaning  stage 03](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/3bc6430e11604edbe75f7e2f6765bc4126ca5953/Assets/Databricks%20project-data%20cleaning%20code2.png)
 
-## Pyspark Cleaning coding SQL results
-![Pyspark Cleaning coding SQL results]()
+##  mount data
+![image](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/540085efcd65fe67cfeace8eaeb468ed5a38bc55/Assets/mount%20blob%20stoarge%20and%20save2.png)
 
-## Sql results
-![sql results]()
+![Write the mounted data](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/3bc6430e11604edbe75f7e2f6765bc4126ca5953/Assets/Databricks%20project-data%20end%20to%20mount.png)
+
+## Outlet files in container
+![Outlet files in container](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/3bc6430e11604edbe75f7e2f6765bc4126ca5953/Assets/result%20output%20files%20.png)
+
+## Outlet data files result
+![Outlet files in Container Results](https://github.com/zBalachandar/Real-Time-ETL-Pipeline-Azure-SQL-to-ADLS-Databricks-and-Pyspark-Project-08/blob/3bc6430e11604edbe75f7e2f6765bc4126ca5953/Assets/CLEANED%20DATA%20OUTPUT%20RESULTS.png)
 
 <a name="data-reporting"></a>
-#📊 Data Analysis
-I created an insightful data Analytics.
-
-## 1.SQL query for Top 10apps
-![sql query Top 10apps]()
-
-## 2. SQL query for top-installed apps
-![SQL query Top installed apps]()
-
-## 3. SQL query for Top Apps
-![sql query 3 ]()
-
-## 4. SQL Category-wise query
-![sql categorywise query]()
-
-## 5. Top paid apps SQL query
-![Top paid apps sql query]()
-
+#📊 Data Analysis KPI -> (optional)
 
 ### 🛠️ Technologies Used
 
 - **Data processing**: DataBricks -Pyspark
+- **Data Storage**: Azure blob storage
 
 <a name="credits"></a>
 ## 📋 Credits
